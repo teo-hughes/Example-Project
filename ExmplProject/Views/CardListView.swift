@@ -15,7 +15,7 @@ struct CardListView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Toggle(isOn: $showPassed) { Text("\(showPassed ? "Hide" : "showw") passed questions") }
+                Toggle(isOn: $showPassed) { Text("\(showPassed ? "Hide Mastered Questions" : "Show") Mastered Questions") }
                 List {
                     ForEach(cardListViewModel.cardViewModels.filter  { $0.studyCard.passed == showPassed }) { cardVM in
                         CardView(cardViewModel: cardVM)
