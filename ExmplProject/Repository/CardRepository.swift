@@ -38,4 +38,22 @@ final class CardRepository:ObservableObject {
         }
         
     }
+    
+    func remove(_ studyCard: StudyCard) {
+        guard let documentId = studyCard.id else { return }
+        store.collection(path).document(documentId).delete { error in
+            if let error = error {
+                print("Unable to remove the card: \(error.localizedDescription)")
+            }
+        }
+    }
+    
+    func update(_ studyCard: StudyCard) {
+        guard let documentId = studyCard.id else { return }
+        do {
+            try store.collection(path).document(documentId).setData(from: studyCard)
+        } catch {
+            fatalError("Updating a study card failed")
+        }
+    }
 }

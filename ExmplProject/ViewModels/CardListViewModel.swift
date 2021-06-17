@@ -27,10 +27,10 @@ final class CardListViewModel: ObservableObject {
     }
     
     func remove(_ studyCard: StudyCard) {
-        print("Todo")
+        cardRepository.remove(studyCard)
     }
     
     func update(_ studyCard: StudyCard) {
-        print("Todo")
+        cardRepository.update(studyCard)
     }
 }
