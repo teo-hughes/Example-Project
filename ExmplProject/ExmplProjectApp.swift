@@ -17,7 +17,7 @@ struct ExmplProjectApp: App {
     
     var body: some Scene {
         WindowGroup {
-            CardListView()
+            CardListView(cardListViewModel: CardListViewModel())
         }
     }
 }
