@@ -13,7 +13,7 @@ struct CardListView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct CardListView_Previews: PreviewProvider {
     static var previews: some View {
         CardListView()
     }
