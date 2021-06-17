@@ -13,6 +13,9 @@
 		256E6C05267BE79B00947551 /* CardRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256E6C04267BE79B00947551 /* CardRepository.swift */; };
 		256E6C0A267BE7F100947551 /* StudyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256E6C09267BE7F100947551 /* StudyCard.swift */; };
 		256E6C0F267BEA6700947551 /* CardListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256E6C0E267BEA6700947551 /* CardListViewModel.swift */; };
+		256E6C14267BEEC400947551 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256E6C13267BEEC400947551 /* CardView.swift */; };
+		256E6C19267BEF0900947551 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256E6C18267BEF0900947551 /* CardViewModel.swift */; };
+		256E6C1E267BF51200947551 /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256E6C1D267BF51200947551 /* FormView.swift */; };
 		25D593B9267BC7DC00429FEA /* ExmplProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D593B8267BC7DC00429FEA /* ExmplProjectApp.swift */; };
 		25D593BB267BC7DC00429FEA /* CardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D593BA267BC7DC00429FEA /* CardListView.swift */; };
 		25D593BD267BC7DD00429FEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25D593BC267BC7DD00429FEA /* Assets.xcassets */; };
@@ -43,6 +46,9 @@
 		256E6C04267BE79B00947551 /* CardRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRepository.swift; sourceTree = "<group>"; };
 		256E6C09267BE7F100947551 /* StudyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyCard.swift; sourceTree = "<group>"; };
 		256E6C0E267BEA6700947551 /* CardListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListViewModel.swift; sourceTree = "<group>"; };
+		256E6C13267BEEC400947551 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		256E6C18267BEF0900947551 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		256E6C1D267BF51200947551 /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
 		25D593B5267BC7DC00429FEA /* ExmplProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExmplProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25D593B8267BC7DC00429FEA /* ExmplProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExmplProjectApp.swift; sourceTree = "<group>"; };
 		25D593BA267BC7DC00429FEA /* CardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListView.swift; sourceTree = "<group>"; };
@@ -88,6 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				25D593BA267BC7DC00429FEA /* CardListView.swift */,
+				256E6C13267BEEC400947551 /* CardView.swift */,
+				256E6C1D267BF51200947551 /* FormView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -96,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				256E6C09267BE7F100947551 /* StudyCard.swift */,
+				256E6C18267BEF0900947551 /* CardViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -315,11 +324,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				256E6C1E267BF51200947551 /* FormView.swift in Sources */,
 				256E6C0F267BEA6700947551 /* CardListViewModel.swift in Sources */,
 				25D593BB267BC7DC00429FEA /* CardListView.swift in Sources */,
 				256E6C0A267BE7F100947551 /* StudyCard.swift in Sources */,
 				256E6C05267BE79B00947551 /* CardRepository.swift in Sources */,
+				256E6C14267BEEC400947551 /* CardView.swift in Sources */,
 				25D593B9267BC7DC00429FEA /* ExmplProjectApp.swift in Sources */,
+				256E6C19267BEF0900947551 /* CardViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
