@@ -13,9 +13,9 @@ struct CardView: View {
     var cardViewModel: CardViewModel
     
     var body: some View {
-        RoundedRectangle(cornerRadius: 6)
-            .fill(flipped ? Color.white: Color.purple)
-            .frame(height: 120)
+        RoundedRectangle(cornerRadius: 10)
+            .fill(flipped ? Color.red: Color.blue)
+            .frame(height: 150)
             .overlay(
                 ZStack {
                     HStack {
@@ -27,7 +27,7 @@ struct CardView: View {
                     }
                     Text(flipped ? cardViewModel.studyCard.answer : cardViewModel.studyCard.question)
                         .foregroundColor(flipped ? Color.black : Color.white)
-                        .font(.custom("Avenir", size:24))
+                        .font(.custom("Avenir", size:25))
                 }.padding()
             )
             .onTapGesture {

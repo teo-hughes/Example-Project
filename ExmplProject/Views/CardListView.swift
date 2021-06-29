@@ -15,11 +15,13 @@ struct CardListView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Toggle(isOn: $showPassed) { Text("\(showPassed ? "Hide Mastered Questions" : "Show") Mastered Questions") }
+                Toggle(isOn: $showPassed) { Text("\(showPassed ? "Hide" : "Show") Mastered Questions")
+                    .padding()
+                }
                 List {
                     ForEach(cardListViewModel.cardViewModels.filter  { $0.studyCard.passed == showPassed }) { cardVM in
                         CardView(cardViewModel: cardVM)
-                            .onLongPressGesture(minimumDuration: 1.5) {
+                            .onLongPressGesture(minimumDuration: 1.75) {
                                 var studyCard = cardVM.studyCard
                                 studyCard.passed.toggle()
                                 cardListViewModel.update(studyCard)
@@ -34,8 +36,9 @@ struct CardListView: View {
                 }) {
                     Circle()
                         .fill(Color.green)
-                        .frame(height: 60)
-                        .overlay(Image(systemName: "plus").foregroundColor(.white))
+                        .frame(height: 100)
+                        .overlay(Image(systemName: "plus")
+                                    .resizable().scaledToFit().frame(width: 70, height: 70).foregroundColor(.white))
                 }.sheet(isPresented: $showingForm) {
                     FormView { (studyCard) in
                         cardListViewModel.add(studyCard)
